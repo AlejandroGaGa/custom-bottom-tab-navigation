@@ -1,12 +1,18 @@
 import React from 'react';
 import {View ,StyleSheet,Text} from 'react-native'; 
-
+import SearchBar from '../components/SearchBar'
+import Screen from '../components/Screen'
 
 const Create = () => {
   return (
+    <>
+    <Screen>
+    <SearchBar/>
+    </Screen>
       <View style={styles.container}>
           <Text style={styles.text}>Crear</Text>
       </View>
+      </>
   )
 }
 
@@ -15,12 +21,12 @@ const styles = StyleSheet.create({
       flex:1,
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: '#fff',
+      backgroundColor: '#292559',
   },
   text:{
       fontSize:20,
       fontWeight: 'bold',
-      color : '#000000',
+      color : '#fff',
   },
 });
 
