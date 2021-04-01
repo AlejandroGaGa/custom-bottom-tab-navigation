@@ -1,5 +1,5 @@
 import React from 'react';
-import {View ,StyleSheet,Text,header} from 'react-native'; 
+import {View ,StyleSheet,Text,Image} from 'react-native'; 
 import SearchBar from '../components/SearchBar'
 import Screen from '../components/Screen'
 
@@ -10,11 +10,12 @@ const Home = () => {
     <Screen>
     <SearchBar/>
     </Screen>
-
+      
       <View style={styles.container}>
-          
-          <Text style={styles.text}>Bienvenido a NIKU</Text>
+      <Text style={styles.text}>Bienvenido a: </Text>
+      <Image style={styles.img} source={require('./niku-logo.png')} />
       </View>
+      
     </>
       
   )
@@ -32,6 +33,10 @@ const styles = StyleSheet.create({
       fontWeight: 'bold',
       color : '#fff',
   },
+  img:{
+    height:125,
+    width:300,
+  }
 });
 
 export default Home;
