@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     container:{
       marginTop:StatusBar.currentHeight,
       paddingHorizontal:15,
-      backgroundColor:'#292559',
+      backgroundColor:'#fff',
     },
 });
 export default Screen;

@@ -6,9 +6,6 @@ import Screen from '../components/Screen'
 const Profile = () => {
   return (
     <>
-      <Screen>
-    <SearchBar/>
-    </Screen>
       <View style={styles.container}>
           <Text style={styles.text}>Perfil</Text>
       </View>

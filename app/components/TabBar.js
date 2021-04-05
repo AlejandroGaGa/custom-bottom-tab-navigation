@@ -1,7 +1,6 @@
 import React,{useState} from 'react';
 import { render } from 'react-dom';
 import { View, StyleSheet, Dimensions} from 'react-native';
-import { color } from 'react-native-reanimated';
 import Tab from './Tab';
 
 const {width} =Dimensions.get('screen');

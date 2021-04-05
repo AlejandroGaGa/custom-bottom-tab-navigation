@@ -7,9 +7,6 @@ const Favorite = () => {
   return (
     
     <>
-      <Screen>
-    <SearchBar/>
-    </Screen>
       <View style={styles.container}>
           <Text style={styles.text}>Favoritos</Text>
       </View>

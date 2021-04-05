@@ -1,9 +1,9 @@
 import React from 'react';
 import {View ,StyleSheet,Text} from 'react-native'; 
-import SearchBar from '../components/SearchBar'
-import Screen from '../components/Screen'
+import SearchBar from './SearchBar'
+import Screen from './Screen'
 
-const Create = () => {
+const buscar = () => {
   return (
     <>
     <Screen>
@@ -21,13 +21,13 @@ const styles = StyleSheet.create({
       flex:1,
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: '#292559',
+      backgroundColor: '#fff',
   },
   text:{
       fontSize:20,
       fontWeight: 'bold',
-      color : '#fff',
+      color : '#000000',
   },
 });
 
-export default Create;
+export default buscar;

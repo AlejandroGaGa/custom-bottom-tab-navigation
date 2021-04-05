@@ -1,15 +1,11 @@
 import React from 'react';
 import {View ,StyleSheet,Text,Image} from 'react-native'; 
-import SearchBar from '../components/SearchBar'
-import Screen from '../components/Screen'
+
 
 
 const Chat = () => {
   return (
     <>
-    <Screen>
-    <SearchBar/>
-    </Screen>
       <View style={styles.container}>
           <Text style={styles.text}>Chat</Text>
       </View>
