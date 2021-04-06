@@ -22,7 +22,7 @@ const TabNavigator = () => {
       component={Favorite} 
       initialParams={{icon: 'heart'}}/>
        <Tab.Screen 
-      name= 'buscar' 
+      name= 'Buscar' 
       component={buscar} 
       initialParams={{icon: 'book-search-outline'}}/>
         

@@ -5,28 +5,39 @@ import { AntDesign } from '@expo/vector-icons';
 
 const styles = StyleSheet.create({
    container:{
-       flexDirection: 'row',
-       paddingVertical:15,
-       paddingLeft:15,
-       borderBottomWidth:1,
-       borderBottomColor:'#E0E0E0'
+    justifyContent: 'center', 
+    alignItems: 'center',
+    marginEnd:6,
+    marginLeft:7,
+    marginBottom:10,
+
+   },
+   text:{
+    fontSize:12,
+    color:'white',
+    fontWeight:'bold',
+    textAlign: 'center',
+    position:'absolute',
+    backgroundColor:'#000000'
    },
    image:{
-       width:80,
-       height:80,
-       marginRight: 10,
+       width:90,
+       height:90,
+       borderRadius:20,
    },
    icon:{
-       marginLeft:'auto',
-       marginRight:10,
+       marginBottom:5,
+       marginTop:-35,
+       position:'relative'
        }
 });
  
 export default function CategoryListItem({catego}){
     return(
         <View style={styles.container}>
+            
             <Image  source={{uri: catego.cover }} style={styles.image}/>
-            <Text>{catego.title}</Text>
+            <Text style={styles.text}>{catego.title}</Text>
             <AntDesign  style={styles.icon} name="rightcircle" size={24} color="#FD3F00" />
         </View>
     );

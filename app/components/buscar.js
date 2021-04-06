@@ -10,7 +10,7 @@ const buscar = () => {
     <SearchBar/>
     </Screen>
       <View style={styles.container}>
-          <Text style={styles.text}>Crear</Text>
+          <Text style={styles.text}>Buscar</Text>
       </View>
       </>
   )
